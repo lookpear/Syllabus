@@ -1,0 +1,111 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[usenames,dvipsnames,table]{xcolor}
+\usepackage{fullpage}
+\usepackage[top=0.5in, bottom=1in, left=1.0in, right=1.0in]{geometry}
+\usepackage{amsmath}
+\usepackage{fancyhdr}
+\usepackage{pgfornament}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{xspace}
+\usepackage{lastpage}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{colortbl}
+
+
+
+%opening
+\renewcommand*{\familydefault}{\sfdefault}
+
+
+\newcommand{\epv}[1]{\ensuremath{\left< #1 \right>}\xspace}
+\newcommand{\variance}{\ensuremath{\text{Var}}}
+\newcommand{\unit}[1]{\;\textrm{#1}}
+\newcommand{\kwd}[1]{\textbf{\textcolor{Brown}{#1}}}
+%\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\definecolor{cobalt}{rgb}{0.0, 0.28, 0.67}
+\titleformat{\section}
+{\normalfont\sffamily\large\bfseries\color{cobalt}}
+{\thesection}{0em}{}
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+%\cfoot{\pgfornament[height=1em, ydelta=-0.4em]{11} \thepage \;\pgfornament[height=1em, ydelta=-0.4em]{14}}
+
+\pagenumbering{gobble}
+\begin{document}
+
+\begin{center}
+	\textcolor{orange}{\Huge{\textsc{Pattern Recognition}}}\\
+	\pgfornament[width=0.7\textwidth, color=white!30!black]{89}
+\end{center}
+
+%\begin{enumerate}[label={\textbf{Problem {\theenumi}}}]
+%	\setlength\itemsep{1em}
+%\end{enumerate}
+%\setitemize{wide}
+\begin{itemize}[leftmargin=1in]
+\item [\textcolor{cobalt}{\textbf{Instructor:}}] Piti Ongmongkolkul(piti.ong@mahidol.ac.th)
+
+\end{itemize}
+
+\section*{Grading Scheme}
+
+Subject to change.
+
+\begin{center}
+\setlength{\arrayrulewidth}{2pt} 
+\rowcolors{1}{blue!10!white}{white}
+\begin{tabular}{lr}
+
+\arrayrulecolor{cobalt}\hline
+Weekly Assignment \hspace{2cm} & 30 \% \\
+
+Fun Project & 10 \% \\
+
+Midterm \hspace{2cm} & 30 \% \\
+
+Final \hspace{2cm} & 30 \% \\
+\hline
+\end{tabular}
+\end{center}
+
+\section*{Goal}
+
+ The class covers many machine learning algorithm with emphasis on supervised learning. As the main goal of this class is to develop you intuition on how to build a classification system. Knowing the exact formula/algorithm is much less important than gaining the intuition. Keep this in mind when you do exercise in class. Think along, make a lot of alternative guess(why not this? what's wrong with that?), comes up with a lot of ideas(how about this?), and ask tons of questions.
+
+
+\section*{Suggested Resources}
+
+Books: Pattern Recognition and Machine Learning By Bishop, Learning from Data by Yaser S. Abu-Mostafa
+
+Online Resources:
+Scikit Learn Documentation is a good start. Andrew Ng Coursera is also a very good one. Or Search youtube for Caltech ML course.
+
+\section*{Canvas}
+
+This course will utilize canvas. Make sure you sign up and enroll before the end of the first week at \url{https://canvas.instructure.com/enroll/37G9JT}.
+
+\section*{Tentative Schedule}
+
+\begin{center}
+\rowcolors{1}{blue!10!white}{white}
+\setlength{\arrayrulewidth}{2pt} 
+\begin{tabular}{cl}
+	\arrayrulecolor{cobalt}\hline
+    \textbf{Week 1 }& Basic Tools \& Naive Bayes \\
+    \textbf{Week 2 }& Gradient Descent \& Linear Regression\\
+    \textbf{Week 3 }& Logistic Regression \& Nearest Neighborhood \\
+    \textbf{Week 4 }& Generalization \& Regularization \\
+    \textbf{Week 5 }& Model Selections \& Cross Validation\\
+    \textbf{Week 6 }& Midterm\\
+    \textbf{Week 7 }& Multiclass Problem\\
+    \textbf{Week 8}& Clustering Problem\\
+    \textbf{Week 9 }& SVM\\
+    \textbf{Week 10 }& SVM\\
+    \textbf{Week 11}& Collaborative Filtering\\
+    \textbf{Week 12}& Collaborative Filtering\\
+	\hline
+\end{tabular}
+\end{center}
+\end{document}
